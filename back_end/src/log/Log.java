@@ -4,14 +4,16 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.io.File;
 
 public class Log {
     public Connection mConnect;
     private String tableName;
 
-    public Log (Connection connection) {
+    public Log (Connection connection, String _tableName) {
         super();
         this.mConnect = connection;
+        tableName = _tableName;
     }
 
     /**
@@ -19,8 +21,7 @@ public class Log {
      * @param _tableName
      * @return
      */
-    public boolean createTable (String _tableName) {
-        this.tableName = _tableName;
+    public boolean createTable () {
         boolean result = false;
         String sql = "CREATE TABLE IF NOT EXISTS  `" + tableName +"` (`userid` int(10) unsigned NOT NULL AUTO_INCREMENT, `username` varchar(100) NOT NULL, `pwd` varchar(100) NOT NULL, `filepath` varchar(100) NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4";
         try {
@@ -90,6 +91,14 @@ public class Log {
             statement.executeUpdate(sql);
             result = true;
             statement.close();
+            File dir = new File(user.getPath());
+            /**
+             * 在这里添加文件夹
+             * ..
+             * ..
+             * ..
+             * ..
+             */
         } catch (SQLException e) {
             System.err.println("添加异常:"+e.getMessage());
         }
@@ -114,12 +123,12 @@ public class Log {
         /**
          * 检查连接
          */
-        Log test = new Log(DBManager.getConnection());
+        Log test = new Log(DBManager.getConnection(), "users");
 
         /**
          * 检查数据库创建
          */
-        // if (test.createTable("users")) System.out.println("表格创建成功");
+        // if (test.createTable()) System.out.println("表格创建成功");
         // else System.out.println("表格创建失败");
 
         // test.clearTable(); // 清空数据库
