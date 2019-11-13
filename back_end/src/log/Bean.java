@@ -15,6 +15,7 @@ public class Bean {
     /**
      * 更改用户名和密码
      * @param _name
+     * @param _pwd
      */
     public void setName (String _name) {
         name = _name;

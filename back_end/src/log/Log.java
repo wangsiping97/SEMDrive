@@ -17,9 +17,7 @@ public class Log {
     }
 
     /**
-     * 创建表格
-     * @param _tableName
-     * @return
+     * 创建表
      */
     public boolean createTable () {
         boolean result = false;
