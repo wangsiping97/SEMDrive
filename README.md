@@ -14,11 +14,15 @@ Otherwise, double click `Drive_windows-x64_1_0.exe` to start the installation. F
 
 ### Main Window
 
+![1](https://github.com/wangsiping97/SEMDrive/blob/master/pics/1.png)
+
 It might take a few seconds to load the welcome page.
 
 ### Sign Up and Login
 
 The first time you use SEM Drive, please click the “Sign Up” button to create your account (It’s okay to include Chinese characters in your username, but we recommend that you do not include blanks in username, otherwise downloading might fail).
+
+![2](https://github.com/wangsiping97/SEMDrive/blob/master/pics/2.png)
 
 **Do check your internet connection before any actions.** Otherwise you might get stuck and the application will “freeze” without responding to your requests.
 
@@ -26,19 +30,29 @@ The application will indicates that you sign up successfully. At the same time, 
 
 Click ok and you’ll return to the main window. This time you can log in with your account.
 
+![3](https://github.com/wangsiping97/SEMDrive/blob/master/pics/3.png)
+
 Notice: A message box will pop up if you submit an incorrect password or invalid username.
 
 ### File Operation
+
+![4](https://github.com/wangsiping97/SEMDrive/blob/master/pics/4.png)
 
 After you login successfully, a file operation page shows up. In this page, you can choose to upload files on your PC to the server, or browse your files in your folder on the server.
 
 If you choose to upload files, a system explorer will show up. You can filter pdf files, or just choose from “All files”.
 
+![5](https://github.com/wangsiping97/SEMDrive/blob/master/pics/5.png)
+
 Please wait a while after you select “Choose”. SEM Drive will inform you of whether you upload the file successfully.
+
+![6](https://github.com/wangsiping97/SEMDrive/blob/master/pics/6.png)
 
 Note that you can only upload one file at a time. If you select multiple files, the first one in the list will be uploaded. We recommend that you do not include blanks or Chinese characters in your file name. Otherwise downloading of the files will be affected.
 
 Click OK and return to the file operation page. Now you click on “View/Download”. A browser appears. You can filter the files with keywords or postfix.
+
+![7](https://github.com/wangsiping97/SEMDrive/blob/master/pics/7.png)
 
 You can download or delete the files. Make sure you’ve single click the file name before you click the download or delete button.
 
